@@ -1,5 +1,4 @@
 # Databricks notebook source
-
 spark.databricks.chauffeur.enableIdleContextTracking
 
 
@@ -53,3 +52,21 @@ spark.version
 # MAGIC 
 # MAGIC %pip freeze > /dbfs/sub_dir/requirements.txt
 # MAGIC %pip install  -r /dbfs/sub_dir/requirements.txt
+
+# COMMAND ----------
+
+dbutils.fs.put("/FileStore/my-stuff/my-file.txt", "This is the actual text that will be saved to disk. Like a 'Hello world!' example")
+
+# COMMAND ----------
+
+# MAGIC %fs
+# MAGIC ls
+
+# COMMAND ----------
+
+# MAGIC %fs
+# MAGIC ls 'dbfs:/FileStore/'
+
+# COMMAND ----------
+
+
