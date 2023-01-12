@@ -1,2 +1,2 @@
-# distributed_data_azure_databricks
+# Distributed Data Systems wiht Azure Databricks
 Code and lessons
